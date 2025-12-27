@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Foodiee foods  Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
+                <h1>FOODIEE FOODS</h1>
+            </div>
+            <div class="toggle-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="special.html"><i class="fas fa-star"></i> Specials</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+                <li class="order-btn"><a href="order.html"><i class="fas fa-shopping-cart"></i> Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="order-hero">
+            <img src="order banner.webp" alt="ordernow banner" class="order-hero-img">
+            <div class="order-hero-content">
+                <h1>Place Your Order</h1>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="dish-container">
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="chicken 65.jpeg" alt="Chicken 65">
+                        <span class="menu-badge non-vegetarian"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Chicken 65</h3>
+                            <span class="menu-price">$12.99</span>
+                        </div>
+                        <p>Deep-fried spicy chicken marinated in ginger, garlic, red chillies and other spices.</p>
+                        <button class="add-to-cart" data-name="Chicken 65" data-price="12.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Rava Dosa.jpeg" alt="Rava Dosa">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Rava Dosa</h3>
+                            <span class="menu-price">$13.99</span>
+                        </div>
+                        <p>Crispy, lacy crepe made with semolina, served with sambar and coconut chutney.</p>
+                        <button class="add-to-cart" data-name="Rava Dosa" data-price="13.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Hyderabadi Chicken Biryani.jpeg" alt="Hyderabadi Biryani">
+                        <span class="menu-badge non-vegetarian"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                        <span class="menu-badge spicy"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Hyderabadi Chicken Biryani</h3>
+                            <span class="menu-price">$18.99</span>
+                        </div>
+                        <p>Fragrant basmati rice cooked with chicken, spices, and herbs in the authentic Hyderabadi style.</p>
+                        <button class="add-to-cart" data-name="Hyderabadi Chicken Biryani" data-price="18.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Vegetable Pulao.jpeg" alt="Vegetable Pulao">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Vegetable Pulao</h3>
+                            <span class="menu-price">$14.99</span>
+                        </div>
+                        <p>Basmati rice cooked with mixed vegetables and aromatic spices.</p>
+                        <button class="add-to-cart" data-name="Vegetable Pulao" data-price="14.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Butter Naan.jpeg" alt="Butter Naan">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Butter Naan</h3>
+                            <span class="menu-price">$3.99</span>
+                        </div>
+                        <p>Soft leavened bread baked in tandoor and brushed with butter.</p>
+                        <button class="add-to-cart" data-name="Butter Naan" data-price="3.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Garlic Cheese Naan.jpeg" alt="Garlic Cheese Naan">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                        <span class="menu-badge popular"><i class="fas fa-fire"></i> Popular</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Garlic Cheese Naan</h3>
+                            <span class="menu-price">$5.99</span>
+                        </div>
+                        <p>Naan bread stuffed with cheese and topped with garlic and fresh cilantro.</p>
+                        <button class="add-to-cart" data-name="Garlic Cheese Naan" data-price="5.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Gulab Jamun.jpeg" alt="Gulab Jamun">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Gulab Jamun</h3>
+                            <span class="menu-price">$6.99</span>
+                        </div>
+                        <p>Soft milk solids balls soaked in rose flavored sugar syrup.</p>
+                        <button class="add-to-cart" data-name="Gulab Jamun" data-price="6.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Rasmalai.jpeg" alt="Rasmalai">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Rasmalai</h3>
+                            <span class="menu-price">$7.99</span>
+                        </div>
+                        <p>Soft cottage cheese patties soaked in sweetened, thickened milk delicately flavored with cardamom.</p>
+                        <button class="add-to-cart" data-name="Rasmalai" data-price="7.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Mango Lassi.jpeg" alt="Mango Lassi">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                        <span class="menu-badge popular"><i class="fas fa-fire"></i> Popular</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Mango Lassi</h3>
+                            <span class="menu-price">$4.99</span>
+                        </div>
+                        <p>Refreshing yogurt-based drink blended with mango pulp and a hint of cardamom.</p>
+                        <button class="add-to-cart" data-name="Mango Lassi" data-price="4.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Masala Chai.jpeg" alt="Masala Chai">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Masala Chai</h3>
+                            <span class="menu-price">$3.99</span>
+                        </div>
+                        <p>Traditional Indian spiced tea with ginger, cardamom, cinnamon, and cloves.</p>
+                        <button class="add-to-cart" data-name="Masala Chai" data-price="3.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="veg samosa.jpeg" alt="Vegetable Samosa">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Vegetable Samosa</h3>
+                            <span class="menu-price"><strike>$6.99</strike></span>
+                            <span class="menu-price discounted">$4.49</span>
+                        </div>
+                        <p>Crispy pastry filled with spiced potatoes, peas, and aromatic spices. Served with mint chutney.</p>
+                        <button class="add-to-cart" data-name="Vegetable Samosa" data-price="4.49"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="masala dosa.jpeg" alt="Masala Dosa">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Masala Dosa</h3>
+                            <span class="menu-price"><strike>$14.99</strike></span>
+                            <span class="menu-price discounted">$10.99</span>
+                        </div>
+                        <p>Crispy rice crepe filled with spiced potato masala. Served with sambar and coconut chutney.</p>
+                        <button class="add-to-cart" data-name="Masala Dosa" data-price="10.99"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Paneer Tikka Masala.jpeg" alt="Paneer Tikka Masala">
+                        <span class="menu-badge vegetarian"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Paneer Tikka Masala</h3>
+                            <span class="menu-price"><strike>$15.99</strike></span>
+                            <span class="menu-price discounted">$11.49</span>
+                        </div>
+                        <p>Cubes of cottage cheese marinated and grilled, then simmered in a spiced tomato sauce.</p>
+                        <button class="add-to-cart" data-name="Paneer Tikka Masala" data-price="11.49"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="dish-card">
+                    <div class="menu-item-image">
+                        <img src="Butter Chicken.jpeg" alt="Butter Chicken">
+                        <span class="menu-badge non-vegetarian"><i class="fas fa-drumstick-bite"></i> Non-Veg</span>
+                        <span class="menu-badge popular"><i class="fas fa-fire"></i> Popular</span>
+                    </div>
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Butter Chicken</h3>
+                            <span class="menu-price"><strike>$16.99</strike></span>
+                            <span class="menu-price discounted">$12.49</span>
+                        </div>
+                        <p>Tender pieces of tandoori chicken cooked in a rich, creamy tomato sauce with butter and spices.</p>
+                        <button class="add-to-cart" data-name="Butter Chicken" data-price="12.49"><i class="fas fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
