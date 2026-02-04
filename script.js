@@ -1,3 +1,34 @@
+//signup section
+// MAIN TABS
+const authTabs = document.querySelectorAll(".auth-tab");
+const sections = document.querySelectorAll(".auth-section");
+
+authTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        authTabs.forEach(t => t.classList.remove("active"));
+        sections.forEach(s => s.classList.remove("active"));
+
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.target).classList.add("active");
+    });
+});
+
+// STAFF TABS
+const staffTabs = document.querySelectorAll(".staff-tab");
+const staffForms = document.querySelectorAll(".staff-form");
+
+staffTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        staffTabs.forEach(t => t.classList.remove("active"));
+        staffForms.forEach(f => f.classList.remove("active"));
+
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.staff).classList.add("active");
+    });
+});
+
+
+//navbar section
 document.addEventListener('DOMContentLoaded', function() {
     const toggleBtn = document.querySelector('.toggle-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -19,9 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
-        const isClickInsideNavbar = toggleBtn.contains(event.target) || 
-                                    navLinks.contains(event.target);
-        
+        const isClickInsideNavbar = toggleBtn.contains(event.target) || navLinks.contains(event.target);
+         
         if (!isClickInsideNavbar && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
             
@@ -36,10 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         if (window.innerWidth > 900 && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
-            
-            const icon = toggleBtn.querySelector('i');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
         }
     });
     
@@ -84,9 +110,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// menu section
+//category division section
 document.addEventListener("DOMContentLoaded", function() {
     const tabs = document.querySelectorAll(".category-tab");
     const menuItems = document.querySelectorAll(".menu-item");
+    
+    menuItems.forEach(item => item.classList.add("show"));
 
     tabs.forEach(tab => {
         tab.addEventListener("click", function() {
@@ -105,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//cart notification in section
 document.addEventListener("DOMContentLoaded", function () {
     const cartButtons = document.querySelectorAll(".add-to-cart");
     const cartNotification = document.getElementById("cartNotification");
@@ -125,6 +156,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// contact secction
+// table reservation section
+document.getElementById("reservationForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("resName").value;
+  const phone = document.getElementById("resPhone").value;
+
+  if (name === "" || phone === "") {
+    alert("Please fill all required fields");
+    return;
+  }
+
+  alert("Thank you! Your table reservation has been submitted.");
+
+  this.reset();
+});
+
+// contact notification section
 document.addEventListener("DOMContentLoaded", function () {
     const contactButtons = document.querySelectorAll(".contact-button");
     const contactNotification = document.getElementById("contactNotification");

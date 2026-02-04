@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Foodiee foods  Restaurant</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
+                <img src="images/ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
                 <h1>FOODIEE FOODS</h1>
             </div>
             <div class="toggle-btn">
@@ -22,10 +22,9 @@
             <ul class="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
-                <li><a href="special.html"><i class="fas fa-star"></i> Specials</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
-                <li class="order-btn"><a href="order.html"><i class="fas fa-shopping-cart"></i> Order Now</a></li>
+                <li><a href="signin.html"><button id="signin-btn"><i class="fas fa-user"></i> Sign In</button></a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +32,7 @@
    <main> 
         <!-- Hero Section -->
         <section class="contact-hero">
-            <img src="Contact us banner.jpg" alt="Contact Us banner" class="contact-hero-img">
+            <img src="images/Contact us banner.jpg" alt="Contact Us banner" class="contact-hero-img">
             <div class="contact-hero-content">
                 <h1>Get In Contact</h1>
             </div>
@@ -44,6 +43,9 @@
             <h2>Contact Information</h2>
             <p>We'd love to hear from you! Reach out to us using the details below:</p>
             <div class="contact-details">
+                <div class="contact-box">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d799.9112530230616!2d80.24690480176338!3d12.966640305220027!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1769939007193!5m2!1sen!2sin" width="180" height="100" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <div class="contact-box">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Our Location</h3>
@@ -61,7 +63,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Contact Form -->
         <div class="contact-container">
             <section class="contact-form">
@@ -74,22 +76,13 @@
                 </form>
             </section>
         </div>
-
-        <!-- Google Map -->
-        <section class="map">
-            <h2>Find Us Here</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.424052486351!2d80.26563271432294!3d13.082680716659248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526f4602d5a4d5%3A0xa0c13a90efcd72d3!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1649052925106!5m2!1sen!2sin" 
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </section>
     </main>
 
    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
+                    <img src="images/ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
                     <h2>FOODIEE FOODS</h2>
                 </div>
                 <div class="footer-links">
@@ -98,7 +91,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-hours">
@@ -108,7 +101,7 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Spice Lane, Flavor Town</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 South Indian Street, Chennai, India</p>
                     <p><i class="fas fa-phone"></i> (555) 123-4567</p>
                     <p><i class="fas fa-envelope"></i> info@foodieefoods.com</p>
                     <div class="social-icons">

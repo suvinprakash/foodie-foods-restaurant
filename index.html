@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
+                <img src="images/ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
                 <h1>FOODIEE FOODS</h1>
             </div>
             <div class="toggle-btn">
@@ -20,10 +20,9 @@
             <ul class="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
-                <li><a href="special.html"><i class="fas fa-star"></i> Specials</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
-                <li class="order-btn"><a href="order.html"><i class="fas fa-shopping-cart"></i> Order Now</a></li>
+                <li><a href="signin.html"><button id="signin-btn"><i class="fas fa-user"></i> Sign In</button></a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +32,7 @@
             <div class="video-container">
                 <!-- For demo purposes, using a placeholder. In production, replace with your actual video -->
                 <video autoplay muted loop id="background-video">
-                    <source src="intro video.mp4" type="video/mp4">
+                    <source src="images/intro video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-overlay"></div>
@@ -43,7 +42,7 @@
                 <h2>Authentic South Indian Cuisine</h2>
                 <p>Experience the rich flavors of Madras in every bite</p>
                 <div class="hero-buttons">
-                    <button class="cta-button">View Our Menu</button>
+                   <a href="#reservation"> <button class="cta-button">Reserve Your Table</button></a>
                     <button class="secondary-button"><i class="fas fa-play-circle"></i> Watch Our Story</button>
                 </div>
             </div>
@@ -76,13 +75,64 @@
                 </div>
             </div>
         </section>
+
+        <section class="reservation-section" id="reservation">
+            <h2>Reserve Your Table</h2>
+
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="resName" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="resPhone" placeholder="Your phone number" required>
+                </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="resDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="time" id="resTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select id="resGuests">
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5+ Guests</option>
+                    </select>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label>Special Requests</label>
+                <textarea placeholder="Any dietary requirements or special occasions?"></textarea>
+                </div>
+
+                <button type="submit" class="reserve-btn">
+                Reserve Table
+                </button>
+            </form>
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
+                    <img src="images/ff logo.jpg" height="50" width="50" alt="Foodiee Foods Logo">
                     <h2>FOODIEE FOODS</h2>
                 </div>
                 <div class="footer-links">
@@ -90,8 +140,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-hours">
@@ -101,8 +151,8 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Spice Lane, Flavor Town</p>
-                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i>  123 South Indian Street, Chennai, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
                     <p><i class="fas fa-envelope"></i> info@foodieefoods.com</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
