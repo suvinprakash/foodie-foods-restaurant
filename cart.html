@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="css/cart-style.css">
 </head>
 <body>
-    
+    <div class="cart-container">
+         <a href="menu.html"><button><i class="fa-solid fa-arrow-left-long"></i> Back to menu</button></a>
+        <div class="cart-header">
+            <img src="images/ff logo.jpg" alt="Foodie Foods Logo">
+            <h1>FOODIE FOODS</h1>
+        </div>
+        <h2 id="cart-mentioner">Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="total" id="total"></div>
+        <div class="cart-actions">
+
+            <button onclick="clearCart()">Clear Cart</button>
+
+            <button class="checkout-btn" onclick="checkout()">Checkout <i class="fa-solid fa-arrow-right-long"></i></button>
+
+        </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>

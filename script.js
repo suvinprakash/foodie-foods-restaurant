@@ -135,6 +135,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+// add to cart section
+function addToCart(name, price, image) {
+
+    // Get existing cart
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Check if item already exists
+    let existing = cart.find(item => item.name === name);
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+    }
+
+    // Save back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
 //cart notification in section
 document.addEventListener("DOMContentLoaded", function () {
     const cartButtons = document.querySelectorAll(".add-to-cart");
@@ -155,6 +180,80 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// cart section
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let cartItemsDiv = document.getElementById("cart-items");
+let totalDiv = document.getElementById("total");
+
+function loadCart() {
+
+    cartItemsDiv.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+
+        let itemTotal = item.price * item.quantity;
+        total += itemTotal;
+
+        cartItemsDiv.innerHTML += `
+            <div class="cart-item">
+
+                <img src="${item.image}" class="cart-img">
+
+                <div class="cart-info">
+                    <strong>${item.name}</strong><br>
+                    ₹${item.price} × ${item.quantity}
+                </div>
+
+                <div class="cart-right">
+                    ₹${itemTotal}
+                    <button onclick="removeItem(${index})">X</button>
+                </div>
+            </div>
+        `;
+    });
+
+    totalDiv.innerHTML = "Total: ₹" + total;
+}
+
+// Remove item
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    loadCart();
+}
+
+// Clear cart
+function clearCart() {
+
+    localStorage.removeItem("cart");
+    cart = [];
+
+    loadCart();
+}
+
+// Load when page opens
+loadCart();
+
+// Checkout function
+function checkout() {
+
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    alert("Order placed successfully!");
+
+    localStorage.removeItem("cart");
+    window.location.href = "index.html"; 
+}
 
 // contact secction
 // table reservation section
